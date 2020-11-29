@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Student>
+
+<p>Huisnummers boven de 100 gesorteerd vanaf het hoogste nummer:</p>
+
+@foreach (Student student in Model)
+{
+    <p>Voornaam: @student.Voornaam,  Achternaam: @student.Achternaam, Huisnummer: @student.Huisnummer</p>
+}
